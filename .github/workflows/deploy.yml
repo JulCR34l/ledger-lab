@@ -41,7 +41,7 @@ jobs:
       environment: dev
       image: ${{ needs.image.outputs.ref }}
 
-    prod:
+  prod:
     needs: [image, dev]
     permissions:
       contents: read
